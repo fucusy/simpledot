@@ -45,7 +45,7 @@ argparse.ArgumentParser.set_default_subparser = set_default_subparser
 IGNORE_DIRS = ['.git']
 IGNORE_SUFFIXES = ['.swp']
 SOURCE = os.path.expanduser('~/.simpledot')
-RE_DOTFILE = re.compile('dotfile\s+@\s+(.*)')
+RE_DOTFILE = re.compile('dotfile\s+@\s+([^\s"]*)')
 
 COLOR_PREFIX = '\033['
 COLOR_RED = '31m'
