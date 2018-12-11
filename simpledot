@@ -156,7 +156,7 @@ def cmd_list(args):
     for src, dst in sorted(yield_annotations()):
         relsrc = os.path.relpath(src, SOURCE)
         exists = os.path.exists(dst)
-        print(u"{} {:20} -> {}".format(checkmark(exists), relsrc, dst))
+        print(u"{} {:20} -> {}".format(exists, relsrc, dst))
 
 
 def cmd_up(args):
